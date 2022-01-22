@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constrLayout"
+    android:layout_margin="20dp"
+    >
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/checkB"
+        android:text="Some kind of title"
+        android:textSize="20sp"
+        android:layout_marginStart="15dp"
+        android:paddingTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="25dp"
+        android:text="12.12.2020"
+        />
+
+    <CheckBox
+        android:id="@+id/checkB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/textDate"/>
+
+    <TextView
+        android:id="@+id/descTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textDate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:maxLines="4"
+        android:paddingBottom="8dp"
+        android:text="asdflskdfjasldjf asdf lkasd;lfk a;sd  alsdkjf asdk lfjlasdk jflaskd jflsaldkf j"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
